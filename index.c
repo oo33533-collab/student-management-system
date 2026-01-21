@@ -3,14 +3,14 @@
 
 int calculatePercentage(int score, int total_questions) {
      // Calculate percentage
-    float percentage = (score / (float)total_questions) * 100;
+    float percentage = (score / (float)total_questions) * 100.0;
 
     // Print final result
     printf("Quiz Finished!\n"); 
     printf("Total correct answers: %d\n", score);
     printf("Percentage: %.2f%%\n", percentage);
 
-    if (percentage >= 50) {
+    if (percentage >= 50.0) {
         printf("Result: PASS\n");
     } else {
         printf("Result: FAIL\n");
